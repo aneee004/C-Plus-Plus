@@ -18,7 +18,7 @@ var searchData=
   ['add_5fcv_21',['add_cv',['http://en.cppreference.com/w/cpp/types/add_cv.html',0,'std']]],
   ['add_5fdigit_22',['add_digit',['../db/d82/classlarge__number.html#a60c436d1a1c5e3795d6177d3815ad615',1,'large_number']]],
   ['add_5fdirected_5fedge_23',['add_directed_edge',['../df/dce/namespacegraph.html#adbe6cd1fd148173ce6a01669925d2d72',1,'graph']]],
-  ['add_5fedge_24',['add_edge',['../dd/df8/class_tree.html#a9d4a19cc416dca832c95a315d8704156',1,'Tree']]],
+  ['add_5fedge_24',['add_edge',['../d4/d96/classrange__queries_1_1_tree.html#ad4cb4228843bad0b9c31c942201382fb',1,'range_queries::Tree']]],
   ['add_5flvalue_5freference_25',['add_lvalue_reference',['http://en.cppreference.com/w/cpp/types/add_reference.html',0,'std']]],
   ['add_5fpointer_26',['add_pointer',['http://en.cppreference.com/w/cpp/types/add_pointer.html',0,'std']]],
   ['add_5frvalue_5freference_27',['add_rvalue_reference',['http://en.cppreference.com/w/cpp/types/add_reference.html',0,'std']]],

@@ -1,0 +1,10 @@
+<map id="range_queries::HLD::init" name="range_queries::HLD::init">
+<area shape="rect" id="node1" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="5,136,144,177"/>
+<area shape="rect" id="node2" href="$d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1" title="Function that specifies the type of operation involved when segments are combined." alt="" coords="192,5,331,47"/>
+<area shape="rect" id="node3" href="$d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4" title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)" alt="" coords="192,71,331,112"/>
+<area shape="rect" id="node4" href="$d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c" title="Utility function to lable the nodes so that heavy chains have a contigous lable." alt="" coords="192,136,331,177"/>
+<area shape="rect" id="node5" href="$d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec" title="Utility function to assign highest parent that can be reached though heavy chains." alt="" coords="192,201,331,243"/>
+<area shape="rect" id="node6" href="$d4/d96/classrange__queries_1_1_tree.html#a9925842d6dc19e232e899e57a210898c" title="This function must be called after the tree adjacency list and node values are populated The function..." alt="" coords="193,267,330,308"/>
+<area shape="rect" id="node7" href="$d4/d96/classrange__queries_1_1_tree.html#a14f0af3e162835106006ff5bac51c0d1" title="Utility function to populate the t_par vector." alt="" coords="379,233,516,275"/>
+<area shape="rect" id="node8" href="$d4/d96/classrange__queries_1_1_tree.html#ad0130dc2b48651852e8b505aa7c03d19" title="Utility function to compute sub&#45;tree sizes." alt="" coords="379,299,516,340"/>
+</map>

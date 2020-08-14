@@ -6,6 +6,7 @@ var annotated_dup =
     [ "linear_probing", "d8/d89/namespacelinear__probing.html", "d8/d89/namespacelinear__probing" ],
     [ "machine_learning", "d8/d77/namespacemachine__learning.html", "d8/d77/namespacemachine__learning" ],
     [ "quadratic_probing", "d4/dd2/namespacequadratic__probing.html", "d4/dd2/namespacequadratic__probing" ],
+    [ "range_queries", "dd/d69/namespacerange__queries.html", "dd/d69/namespacerange__queries" ],
     [ "statistics", "d2/dcf/namespacestatistics.html", "d2/dcf/namespacestatistics" ],
     [ "Btree", "d9/d90/struct_btree.html", "d9/d90/struct_btree" ],
     [ "cll", "d5/d15/classcll.html", "d5/d15/classcll" ],
@@ -18,7 +19,6 @@ var annotated_dup =
     [ "Graph", "da/d9a/class_graph.html", "da/d9a/class_graph" ],
     [ "graph", "dd/d9b/classgraph.html", "dd/d9b/classgraph" ],
     [ "hash_chain", "dd/d1c/classhash__chain.html", "dd/d1c/classhash__chain" ],
-    [ "HLD", "df/d62/class_h_l_d.html", "df/d62/class_h_l_d" ],
     [ "Item", "db/d66/struct_item.html", "db/d66/struct_item" ],
     [ "large_number", "db/d82/classlarge__number.html", "db/d82/classlarge__number" ],
     [ "lca", "dd/df4/structlca.html", "dd/df4/structlca" ],
@@ -35,12 +35,10 @@ var annotated_dup =
     [ "Queue", "dc/db5/struct_queue.html", "dc/db5/struct_queue" ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", "d0/dd2/class_queue___array" ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", "d4/db4/struct_segment_intersection" ],
-    [ "SG", "d5/db0/class_s_g.html", "d5/db0/class_s_g" ],
     [ "Solution", "dd/d4f/class_solution.html", "dd/d4f/class_solution" ],
     [ "stack", "d1/dc2/classstack.html", "d1/dc2/classstack" ],
     [ "stack_linkedList", "d2/dc4/classstack__linked_list.html", "d2/dc4/classstack__linked_list" ],
     [ "tower", "d2/d2c/structtower.html", "d2/d2c/structtower" ],
-    [ "Tree", "dd/df8/class_tree.html", "dd/df8/class_tree" ],
-    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ],
-    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ]
+    [ "Trie", "dd/d2f/class_trie.html", "dd/d2f/class_trie" ],
+    [ "trie", "d4/dd9/structtrie.html", "d4/dd9/structtrie" ]
 ];

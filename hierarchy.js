@@ -34,8 +34,8 @@ var hierarchy =
     [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
-    [ "SG< X >", "d5/db0/class_s_g.html", [
-      [ "HLD< X >", "df/d62/class_h_l_d.html", null ]
+    [ "range_queries::SG< X >", "d4/d77/classrange__queries_1_1_s_g.html", [
+      [ "range_queries::HLD< X >", "d4/d32/classrange__queries_1_1_h_l_d.html", null ]
     ] ],
     [ "data_structure::SkipList", "d1/d46/classdata__structure_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
@@ -44,10 +44,10 @@ var hierarchy =
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
     [ "statistics::stats_computer2< T >", "d8/dab/classstatistics_1_1stats__computer2.html", null ],
     [ "tower", "d2/d2c/structtower.html", null ],
-    [ "Tree< X >", "dd/df8/class_tree.html", [
-      [ "HLD< X >", "df/d62/class_h_l_d.html", null ]
+    [ "range_queries::Tree< X >", "d4/d96/classrange__queries_1_1_tree.html", [
+      [ "range_queries::HLD< X >", "d4/d32/classrange__queries_1_1_h_l_d.html", null ]
     ] ],
-    [ "trie", "d4/dd9/structtrie.html", null ],
     [ "Trie", "dd/d2f/class_trie.html", null ],
+    [ "trie", "d4/dd9/structtrie.html", null ],
     [ "Trie::TrieNode", "de/d48/struct_trie_1_1_trie_node.html", null ]
 ];

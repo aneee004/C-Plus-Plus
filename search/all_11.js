@@ -9,7 +9,7 @@ var searchData=
   ['quadratic_5fprobing_1296',['quadratic_probing',['../d4/dd2/namespacequadratic__probing.html',1,'']]],
   ['quadratic_5fprobing_5fhash_5ftable_2ecpp_1297',['quadratic_probing_hash_table.cpp',['../db/d71/quadratic__probing__hash__table_8cpp.html',1,'']]],
   ['quadraticprobe_1298',['quadraticProbe',['../d4/dd2/namespacequadratic__probing.html#ab431981b54c0bae1b2956f716aee1dcf',1,'quadratic_probing']]],
-  ['query_1299',['query',['../dd/d1b/structquery.html',1,'query'],['../d5/db0/class_s_g.html#a0f75aa66f2e5914d305435d05054572f',1,'SG::query()'],['../df/d62/class_h_l_d.html#a0109a7ee2b1c35c84dfe2844369b173c',1,'HLD::query()']]],
+  ['query_1299',['query',['../dd/d1b/structquery.html',1,'query'],['../d4/d77/classrange__queries_1_1_s_g.html#a1228525bb68149cf017461952000eb44',1,'range_queries::SG::query()'],['../d4/d32/classrange__queries_1_1_h_l_d.html#a3cabbfd3c2932d79bcc08db2cafa5478',1,'range_queries::HLD::query()']]],
   ['queue_1300',['queue',['../db/da9/classqueue.html',1,'queue&lt; Kind &gt;'],['../dc/db5/struct_queue.html',1,'Queue'],['http://en.cppreference.com/w/cpp/container/queue.html',0,'std::queue&lt; T &gt;'],['http://en.cppreference.com/w/cpp/container/queue/queue.html',0,'std::queue::queue()'],['../db/da9/classqueue.html#a21381ee7f95daae0332665914780e970',1,'queue::queue()']]],
   ['queue_5farray_1301',['Queue_Array',['../d0/dd2/class_queue___array.html',1,'']]],
   ['queue_5ftest_1302',['queue_test',['../df/dd0/queue__using__two__stacks_8cpp.html#a831ded10ecad88c14a8e22b96f4c1863',1,'queue_using_two_stacks.cpp']]],

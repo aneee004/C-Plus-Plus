@@ -30,7 +30,7 @@ var searchData=
   ['high_5fresolution_5fclock_679',['high_resolution_clock',['http://en.cppreference.com/w/cpp/chrono/high_resolution_clock.html',0,'std::chrono']]],
   ['hill_5fcipher_2ecpp_680',['hill_cipher.cpp',['../d7/db9/hill__cipher_8cpp.html',1,'']]],
   ['hillcipher_681',['HillCipher',['../d6/d26/classciphers_1_1_hill_cipher.html',1,'ciphers']]],
-  ['hld_682',['HLD',['../df/d62/class_h_l_d.html',1,'HLD&lt; X &gt;'],['../df/d62/class_h_l_d.html#ac1aa00428f4f91570f763d236f65cdd0',1,'HLD::HLD()']]],
+  ['hld_682',['HLD',['../d4/d32/classrange__queries_1_1_h_l_d.html',1,'range_queries::HLD&lt; X &gt;'],['../d4/d32/classrange__queries_1_1_h_l_d.html#aa8e310deeb6dd0ca26b8ace42710f87f',1,'range_queries::HLD::HLD()']]],
   ['hours_683',['hours',['http://en.cppreference.com/w/cpp/chrono/duration.html',0,'std::chrono::hours'],['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours::hours()']]],
   ['hypot_684',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
 ];

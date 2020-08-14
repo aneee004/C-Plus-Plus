@@ -1,0 +1,4 @@
+<map id="range_queries::Tree::lca" name="range_queries::Tree::lca">
+<area shape="rect" id="node1" title="The function returns the least common ancestor of two nodes." alt="" coords="5,13,168,39"/>
+<area shape="rect" id="node2" href="$d4/d96/classrange__queries_1_1_tree.html#a34e36164b0686022215b23899b47beb0" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="216,5,353,47"/>
+</map>
