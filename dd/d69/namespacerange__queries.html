@@ -99,19 +99,6 @@ $(document).ready(function(){initNavTree('dd/d69/namespacerange__queries.html','
 <a href="../../dd/d69/namespacerange__queries.html#details">More...</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Algorithms and Data Structures that support range queries and updates. </p>
-<p>Function Documentation: Heavy-Light Decomposition is a technique on trees, that supports the following: 1: Update node s, with a value v 2: Return the (sum) of all node values on the simple path from a to b (sum) can also be replced with <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a>, OR, AND, min, or max</p>
-<p>The update is done in O(log n) time, and the query is done in O(log^2 n) time with HLD where, n is the number of nodes</p>
-<p>The template type is the data type of the value stored in the nodes. If a non-primitive data-type is used as a template, the coressponding operators must be overloaded.</p>
-<p>An HLD object can only be created with a constant number of nodes, and it cannot be changed later. Creaty an empty instance is not supported.</p>
-<p>To start answering updates and queries,</p><ol type="1">
-<li>Create an instance of HLD&lt;X&gt; object (obj), with the required data type.</li>
-<li>Read in the edge/parent information and update it with obj.add_edge(). Note: The edges addes must be 0 indexed.</li>
-<li>Create a vector with initial node values, and call set_node_val() with it.</li>
-<li>Call obj.init() to populate the required information for supporting operations.</li>
-<li>Call obj.update(node, new_val), to update the value at index 'node' to the new value. Note: node must be 0 indexed</li>
-<li>Call obj.query(a, b) to get the (sum) of node values in the simple path from a to b. Note: a and b, must be 0 indexed.</li>
-</ol>
-<p>Sample I/O at the bottom. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
