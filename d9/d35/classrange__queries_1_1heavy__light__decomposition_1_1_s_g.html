@@ -130,14 +130,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a1fda852e6e522707fd97f61cdb0a2591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a range query from node label l to node label r.  <a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a1fda852e6e522707fd97f61cdb0a2591">More...</a><br /></td></tr>
 <tr class="separator:a1fda852e6e522707fd97f61cdb0a2591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3b942be27a1b0fe3cff6cb6edf01294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ad3b942be27a1b0fe3cff6cb6edf01294">set_sret_init</a> (X new_sret_init)</td></tr>
-<tr class="memdesc:ad3b942be27a1b0fe3cff6cb6edf01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initialization for the query data type, based on requirement Change the sret_init, based on requirement: Sum Query: 0 (Default) <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> Query: 0 (Default) Min Query: Infinity Max Query: -Infinity.  <a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ad3b942be27a1b0fe3cff6cb6edf01294">More...</a><br /></td></tr>
+<tr class="memdesc:ad3b942be27a1b0fe3cff6cb6edf01294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the initialization for the query data type, based on requirement.  <a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ad3b942be27a1b0fe3cff6cb6edf01294">More...</a><br /></td></tr>
 <tr class="separator:ad3b942be27a1b0fe3cff6cb6edf01294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="memItemLeft" align="right" valign="top"><a id="afbf8a9cb9449d5ca844f4e141a801e6a"></a>
 <a class="elRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector.html">std::vector</a>&lt; X &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a></td></tr>
-<tr class="memdesc:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Everything here is private, and can only be acced thought the methods, in the derived class (<a class="el" href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html" title="The Heavy-Light Decomposition class.">HLD</a>). <br /></td></tr>
+<tr class="memdesc:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Everything here is private, and can only be accessed through the methods, in the derived class (<a class="el" href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html" title="The Heavy-Light Decomposition class.">HLD</a>). <br /></td></tr>
 <tr class="separator:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d912bbfafa3a7509f66bbc1729ca25"><td class="memItemLeft" align="right" valign="top"><a id="ac6d912bbfafa3a7509f66bbc1729ca25"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>s_size</b></td></tr>
@@ -344,16 +344,16 @@ template&lt;typename X &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Set the initialization for the query data type, based on requirement Change the sret_init, based on requirement: Sum Query: 0 (Default) <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> Query: 0 (Default) Min Query: Infinity Max Query: -Infinity. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Set the initialization for the query data type, based on requirement. </p>
+<p>Change the sret_init, based on requirement: Sum Query: 0 (Default) <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a> Query: 0 (Default) Min Query: Infinity Max Query: -Infinity </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">new_sret_init</td><td>the new init </td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                                        {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        sret_init = new_sret_init;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                        {</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        sret_init = new_sret_init;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -402,7 +402,7 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                            {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span>(p += s_size; p &gt; 0; p &gt;&gt;= 1) <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[p] += v;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span>(p += s_size; p &gt; 0; p &gt;&gt;= 1) { <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[p] += v; }</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
@@ -413,7 +413,7 @@ template&lt;typename X &gt; </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_a41c733f5f5e262b308f7cb95c88c1e74"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">range_queries::heavy_light_decomposition::SG::combine</a></div><div class="ttdeci">X combine(X lhs, X rhs)</div><div class="ttdoc">Function that specifies the type of operation involved when segments are combined.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:250</div></div>
-<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_afbf8a9cb9449d5ca844f4e141a801e6a"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">range_queries::heavy_light_decomposition::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be acced thought the methods, in the derived class (HLD).</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:239</div></div>
+<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_afbf8a9cb9449d5ca844f4e141a801e6a"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">range_queries::heavy_light_decomposition::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be accessed through the methods, in the derived class (HLD).</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:239</div></div>
 <div class="ttc" id="aassign_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/assign.html">std::vector::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
