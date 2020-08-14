@@ -231,14 +231,14 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                               : Tree&lt;X&gt;(nodes), SG&lt;X&gt;(nodes) { </div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="comment">/* Initialization and resize vectors */</span></div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        label = 0;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        h_label.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(Tree&lt;X&gt;::t_nodes, -1);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        h_heavychlid.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(Tree&lt;X&gt;::t_nodes, -1);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(Tree&lt;X&gt;::t_nodes);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/iota.html">iota</a>(h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), 0);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                               : Tree&lt;X&gt;(nodes), SG&lt;X&gt;(nodes) { </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="comment">/* Initialization and resize vectors */</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        label = 0;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        h_label.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(Tree&lt;X&gt;::t_nodes, -1);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        h_heavychlid.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(Tree&lt;X&gt;::t_nodes, -1);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/resize.html">resize</a>(Tree&lt;X&gt;::t_nodes);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/iota.html">iota</a>(h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/begin.html">begin</a>(), h_parent.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/end.html">end</a>(), 0);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -294,21 +294,21 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the sum of ndoe values in the simple path from a to b </dd></dl>
-<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        X ret = SG&lt;X&gt;::sret_init;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_depth[a] &lt; Tree&lt;X&gt;::t_depth[b]) <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(a, b);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        <span class="keywordflow">while</span>(Tree&lt;X&gt;::t_depth[a] &gt;= Tree&lt;X&gt;::t_depth[b]) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordtype">int</span> l = h_label[h_parent[a]];</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordtype">int</span> r = h_label[a];</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_depth[h_parent[a]] &lt; Tree&lt;X&gt;::t_depth[b]) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                l += Tree&lt;X&gt;::t_depth[b] - Tree&lt;X&gt;::t_depth[h_parent[a]];</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            }</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            ret = <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">SG&lt;X&gt;::combine</a>(ret, <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1228525bb68149cf017461952000eb44">SG&lt;X&gt;::query</a>(l, r));</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            a = Tree&lt;X&gt;::t_par[h_parent[a]][0];</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;            <span class="keywordflow">if</span>(a == -1) <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                                {</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        X ret = SG&lt;X&gt;::sret_init;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_depth[a] &lt; Tree&lt;X&gt;::t_depth[b]) <a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a>(a, b);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        <span class="keywordflow">while</span>(Tree&lt;X&gt;::t_depth[a] &gt;= Tree&lt;X&gt;::t_depth[b]) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="keywordtype">int</span> l = h_label[h_parent[a]];</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="keywordtype">int</span> r = h_label[a];</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_depth[h_parent[a]] &lt; Tree&lt;X&gt;::t_depth[b]) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                l += Tree&lt;X&gt;::t_depth[b] - Tree&lt;X&gt;::t_depth[h_parent[a]];</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;            ret = <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">SG&lt;X&gt;::combine</a>(ret, <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1228525bb68149cf017461952000eb44">SG&lt;X&gt;::query</a>(l, r));</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            a = Tree&lt;X&gt;::t_par[h_parent[a]][0];</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">if</span>(a == -1) <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        }</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,19 +356,19 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                   {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordtype">int</span> hc_size = -1, hc_id = -1;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">if</span>(v^p) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">dfs_hc</a>(v, u);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_size[v] &gt; hc_size) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    hc_size = Tree&lt;X&gt;::t_size[v];</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                    hc_id = v;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        }</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        h_heavychlid[u] = hc_id;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                   {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordtype">int</span> hc_size = -1, hc_id = -1;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">if</span>(v^p) {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">dfs_hc</a>(v, u);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <span class="keywordflow">if</span>(Tree&lt;X&gt;::t_size[v] &gt; hc_size) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                    hc_size = Tree&lt;X&gt;::t_size[v];</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                    hc_id = v;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            }</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        h_heavychlid[u] = hc_id;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -416,15 +416,15 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                       {</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        h_label[u] = label++;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">if</span>(h_heavychlid[u] != -1) <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(h_heavychlid[u], u);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">if</span>(v^p and v^h_heavychlid[u]) {</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(v, u);</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            }</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                       {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        h_label[u] = label++;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keywordflow">if</span>(h_heavychlid[u] != -1) <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(h_heavychlid[u], u);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="keywordflow">if</span>(v^p and v^h_heavychlid[u]) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(v, u);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            }</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        }</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -472,17 +472,17 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                    {</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">if</span>(h_heavychlid[u] != -1) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            h_parent[h_heavychlid[u]] = h_parent[u];</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(h_heavychlid[u], u);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        }</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <span class="keywordflow">if</span>(v^p and v^h_heavychlid[u]) {</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(v, u);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            }</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        }</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                    {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">if</span>(h_heavychlid[u] != -1) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            h_parent[h_heavychlid[u]] = h_parent[u];</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(h_heavychlid[u], u);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; v : Tree&lt;X&gt;::t_adj[u]) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="keywordflow">if</span>(v^p and v^h_heavychlid[u]) {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(v, u);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            }</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -514,27 +514,27 @@ template&lt;typename X &gt; </div>
 <p>This function must be called after the tree adjacency list and node values are populated The function initializes the required parametes, and populates the segment tree. </p>
 <p>Fill the heavy child, greatest parent, and labels</p>
 <p>Segment <a class="el" href="../../d4/d96/classrange__queries_1_1_tree.html" title="A Basic Tree, which supports binary lifting.">Tree</a> Initialization</p>
-<div class="fragment"><div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;                {</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <a class="code" href="../../d4/d96/classrange__queries_1_1_tree.html#a9925842d6dc19e232e899e57a210898c">Tree&lt;X&gt;::init</a>();</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">         * Fill the heavy child, greatest parent, and labels</span></div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        label = 0;</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">dfs_hc</a>(Tree&lt;X&gt;::t_root);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(Tree&lt;X&gt;::t_root);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(Tree&lt;X&gt;::t_root);</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">        /**</span></div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">         * Segment Tree Initialization</span></div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Tree&lt;X&gt;::t_nodes; i++) {</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[h_label[i] + Tree&lt;X&gt;::t_nodes] = Tree&lt;X&gt;::t_val[i];</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = Tree&lt;X&gt;::t_nodes - 1; i &gt; 0; i--) {</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;            <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i] = <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">SG&lt;X&gt;::combine</a>(<a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i&lt;&lt;1], <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i&lt;&lt;1|1]);</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        }</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <a class="code" href="../../d4/d96/classrange__queries_1_1_tree.html#a9925842d6dc19e232e899e57a210898c">Tree&lt;X&gt;::init</a>();</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">         * Fill the heavy child, greatest parent, and labels</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        label = 0;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">dfs_hc</a>(Tree&lt;X&gt;::t_root);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">dfs_par</a>(Tree&lt;X&gt;::t_root);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">dfs_labels</a>(Tree&lt;X&gt;::t_root);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;<span class="comment">         * Segment Tree Initialization</span></div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; Tree&lt;X&gt;::t_nodes; i++) {</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;            <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[h_label[i] + Tree&lt;X&gt;::t_nodes] = Tree&lt;X&gt;::t_val[i];</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = Tree&lt;X&gt;::t_nodes - 1; i &gt; 0; i--) {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i] = <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">SG&lt;X&gt;::combine</a>(<a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i&lt;&lt;1], <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">SG&lt;X&gt;::s_tree</a>[i&lt;&lt;1|1]);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        }</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -589,14 +589,14 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the sum of node values in the simple path from a to b </dd></dl>
-<div class="fragment"><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;                          {</div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordtype">int</span> lc = <a class="code" href="../../d4/d96/classrange__queries_1_1_tree.html#af4403514c896aec8452bc57ac1ca48ca">Tree&lt;X&gt;::lca</a>(a, b);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        X ret = SG&lt;X&gt;::sret_init;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        assert(lc != -1);</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        ret += <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">chain_query</a>(a, lc);</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        ret += <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">chain_query</a>(b, lc);</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <span class="keywordflow">return</span> ret - Tree&lt;X&gt;::t_val[lc];</div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;                          {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="keywordtype">int</span> lc = <a class="code" href="../../d4/d96/classrange__queries_1_1_tree.html#af4403514c896aec8452bc57ac1ca48ca">Tree&lt;X&gt;::lca</a>(a, b);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        X ret = SG&lt;X&gt;::sret_init;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        assert(lc != -1);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        ret += <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">chain_query</a>(a, lc);</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        ret += <a class="code" href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">chain_query</a>(b, lc);</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="keywordflow">return</span> ret - Tree&lt;X&gt;::t_val[lc];</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -650,11 +650,11 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                                 {</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        X diff  = val - Tree&lt;X&gt;::t_val[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>];</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#ae677f977cab27b76b7184cdb2fae900c">SG&lt;X&gt;::update</a>(h_label[<a class="code" href="../../d5/da1/structnode.html">node</a>], diff);</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        Tree&lt;X&gt;::t_val[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>] = val;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                                 {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        X diff  = val - Tree&lt;X&gt;::t_val[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>];</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <a class="code" href="../../d4/d77/classrange__queries_1_1_s_g.html#ae677f977cab27b76b7184cdb2fae900c">SG&lt;X&gt;::update</a>(h_label[<a class="code" href="../../d5/da1/structnode.html">node</a>], diff);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        Tree&lt;X&gt;::t_val[<a class="code" href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a>] = val;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -670,23 +670,23 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aresize_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/resize.html">std::vector::resize</a></div><div class="ttdeci">T resize(T... args)</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_s_g_html_ae677f977cab27b76b7184cdb2fae900c"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#ae677f977cab27b76b7184cdb2fae900c">range_queries::SG::update</a></div><div class="ttdeci">void update(int p, X v)</div><div class="ttdoc">Update the value at a node.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:273</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a1228525bb68149cf017461952000eb44"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a1228525bb68149cf017461952000eb44">range_queries::SG::query</a></div><div class="ttdeci">X query(int l, int r)</div><div class="ttdoc">Make a range query from node label l to node label r.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:282</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_s_g_html_ae677f977cab27b76b7184cdb2fae900c"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#ae677f977cab27b76b7184cdb2fae900c">range_queries::SG::update</a></div><div class="ttdeci">void update(int p, X v)</div><div class="ttdoc">Update the value at a node.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:272</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a1228525bb68149cf017461952000eb44"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a1228525bb68149cf017461952000eb44">range_queries::SG::query</a></div><div class="ttdeci">X query(int l, int r)</div><div class="ttdoc">Make a range query from node label l to node label r.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:281</div></div>
 <div class="ttc" id="astructnode_html"><div class="ttname"><a href="../../d5/da1/structnode.html">node</a></div><div class="ttdef"><b>Definition:</b> avltree.cpp:13</div></div>
 <div class="ttc" id="ahash__search_8cpp_html_a8ca8dcb494104d273679e219e53d0555"><div class="ttname"><a href="../../d1/df3/hash__search_8cpp.html#a8ca8dcb494104d273679e219e53d0555">node</a></div><div class="ttdeci">struct list node</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_add52a9321b3723e12e5ab8020930a7ec"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">range_queries::HLD::dfs_par</a></div><div class="ttdeci">void dfs_par(int u, int p=-1)</div><div class="ttdoc">Utility function to assign highest parent that can be reached though heavy chains.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:339</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a893ecd8aff1a064022ba0f3e220d570c"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">range_queries::HLD::dfs_labels</a></div><div class="ttdeci">void dfs_labels(int u, int p=-1)</div><div class="ttdoc">Utility function to lable the nodes so that heavy chains have a contigous lable.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:356</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a1e08bb8d2d2e2e4bbfa0dbf068c31b6e"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">range_queries::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be acced thought the methods, in the derived class (HLD).</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:243</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_tree_html_af4403514c896aec8452bc57ac1ca48ca"><div class="ttname"><a href="../../d4/d96/classrange__queries_1_1_tree.html#af4403514c896aec8452bc57ac1ca48ca">range_queries::Tree::lca</a></div><div class="ttdeci">int lca(int a, int b)</div><div class="ttdoc">The function returns the least common ancestor of two nodes.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:211</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a2645784fa018ab055e518cf9282e93e1"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">range_queries::SG::combine</a></div><div class="ttdeci">X combine(X lhs, X rhs)</div><div class="ttdoc">Function that specifies the type of operation involved when segments are combined.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:254</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a11ec72d874b1c9a56b9f81f4fec598c4"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">range_queries::HLD::dfs_hc</a></div><div class="ttdeci">void dfs_hc(int u, int p=-1)</div><div class="ttdoc">Utility function to assign heavy child to each node (-1 for a leaf node)</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:320</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_add52a9321b3723e12e5ab8020930a7ec"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#add52a9321b3723e12e5ab8020930a7ec">range_queries::HLD::dfs_par</a></div><div class="ttdeci">void dfs_par(int u, int p=-1)</div><div class="ttdoc">Utility function to assign highest parent that can be reached though heavy chains.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:338</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a893ecd8aff1a064022ba0f3e220d570c"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a893ecd8aff1a064022ba0f3e220d570c">range_queries::HLD::dfs_labels</a></div><div class="ttdeci">void dfs_labels(int u, int p=-1)</div><div class="ttdoc">Utility function to lable the nodes so that heavy chains have a contigous lable.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:355</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a1e08bb8d2d2e2e4bbfa0dbf068c31b6e"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a1e08bb8d2d2e2e4bbfa0dbf068c31b6e">range_queries::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be acced thought the methods, in the derived class (HLD).</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:242</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_tree_html_af4403514c896aec8452bc57ac1ca48ca"><div class="ttname"><a href="../../d4/d96/classrange__queries_1_1_tree.html#af4403514c896aec8452bc57ac1ca48ca">range_queries::Tree::lca</a></div><div class="ttdeci">int lca(int a, int b)</div><div class="ttdoc">The function returns the least common ancestor of two nodes.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:210</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_s_g_html_a2645784fa018ab055e518cf9282e93e1"><div class="ttname"><a href="../../d4/d77/classrange__queries_1_1_s_g.html#a2645784fa018ab055e518cf9282e93e1">range_queries::SG::combine</a></div><div class="ttdeci">X combine(X lhs, X rhs)</div><div class="ttdoc">Function that specifies the type of operation involved when segments are combined.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:253</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a11ec72d874b1c9a56b9f81f4fec598c4"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a11ec72d874b1c9a56b9f81f4fec598c4">range_queries::HLD::dfs_hc</a></div><div class="ttdeci">void dfs_hc(int u, int p=-1)</div><div class="ttdoc">Utility function to assign heavy child to each node (-1 for a leaf node)</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:319</div></div>
 <div class="ttc" id="aswap_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/swap.html">std::swap</a></div><div class="ttdeci">T swap(T... args)</div></div>
 <div class="ttc" id="abegin_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/begin.html">std::vector::begin</a></div><div class="ttdeci">T begin(T... args)</div></div>
 <div class="ttc" id="aiota_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/algorithm/iota.html">std::iota</a></div><div class="ttdeci">T iota(T... args)</div></div>
 <div class="ttc" id="aassign_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/assign.html">std::vector::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a524784ddef09ae6d3ff1d3fc52c95343"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">range_queries::HLD::chain_query</a></div><div class="ttdeci">X chain_query(int a, int b)</div><div class="ttdoc">Utility function to break down a path query into two chain queries.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:373</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_h_l_d_html_a524784ddef09ae6d3ff1d3fc52c95343"><div class="ttname"><a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343">range_queries::HLD::chain_query</a></div><div class="ttdeci">X chain_query(int a, int b)</div><div class="ttdoc">Utility function to break down a path query into two chain queries.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:372</div></div>
 <div class="ttc" id="aend_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/end.html">std::vector::end</a></div><div class="ttdeci">T end(T... args)</div></div>
-<div class="ttc" id="aclassrange__queries_1_1_tree_html_a9925842d6dc19e232e899e57a210898c"><div class="ttname"><a href="../../d4/d96/classrange__queries_1_1_tree.html#a9925842d6dc19e232e899e57a210898c">range_queries::Tree::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">This function must be called after the tree adjacency list and node values are populated The function...</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:171</div></div>
+<div class="ttc" id="aclassrange__queries_1_1_tree_html_a9925842d6dc19e232e899e57a210898c"><div class="ttname"><a href="../../d4/d96/classrange__queries_1_1_tree.html#a9925842d6dc19e232e899e57a210898c">range_queries::Tree::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">This function must be called after the tree adjacency list and node values are populated The function...</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:170</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
