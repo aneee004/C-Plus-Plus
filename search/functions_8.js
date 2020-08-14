@@ -15,7 +15,7 @@ var searchData=
   ['height_3235',['height',['../d8/dee/avltree_8cpp.html#ae4a66d8b0c2b0d626aea45977e358c83',1,'avltree.cpp']]],
   ['hex_3236',['hex',['http://en.cppreference.com/w/cpp/io/manip/hex.html',0,'std']]],
   ['hexfloat_3237',['hexfloat',['http://en.cppreference.com/w/cpp/io/manip/fixed.html',0,'std']]],
-  ['hld_3238',['HLD',['../d4/d32/classrange__queries_1_1_h_l_d.html#aa8e310deeb6dd0ca26b8ace42710f87f',1,'range_queries::HLD']]],
+  ['hld_3238',['HLD',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#a6e486767434e44076c1ac374a22da726',1,'range_queries::heavy_light_decomposition::HLD']]],
   ['hours_3239',['hours',['http://en.cppreference.com/w/cpp/chrono/duration/duration.html',0,'std::chrono::hours']]],
   ['hypot_3240',['hypot',['http://en.cppreference.com/w/cpp/numeric/math/hypot.html',0,'std']]]
 ];

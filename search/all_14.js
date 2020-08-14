@@ -75,7 +75,7 @@ var searchData=
   ['translate_1707',['translate',['http://en.cppreference.com/w/cpp/regex/regex_traits/translate.html',0,'std::regex_traits']]],
   ['translate_5fnocase_1708',['translate_nocase',['http://en.cppreference.com/w/cpp/regex/regex_traits/translate_nocase.html',0,'std::regex_traits']]],
   ['treat_5fas_5ffloating_5fpoint_1709',['treat_as_floating_point',['http://en.cppreference.com/w/cpp/chrono/treat_as_floating_point.html',0,'std::chrono']]],
-  ['tree_1710',['Tree',['../d4/d96/classrange__queries_1_1_tree.html',1,'range_queries::Tree&lt; X &gt;'],['../d4/d96/classrange__queries_1_1_tree.html#ad2cd32ac265f26be2f45344699134fb3',1,'range_queries::Tree::Tree()']]],
+  ['tree_1710',['Tree',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html',1,'range_queries::heavy_light_decomposition::Tree&lt; X &gt;'],['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a835fb2bbb27307b8cacad9b287968bc1',1,'range_queries::heavy_light_decomposition::Tree::Tree()']]],
   ['trianglearea_1711',['TriangleArea',['../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc',1,'smallest_circle.cpp']]],
   ['trie_1712',['Trie',['../dd/d2f/class_trie.html',1,'Trie'],['../d4/dd9/structtrie.html',1,'trie'],['../dd/d2f/class_trie.html#a6af57e9f25d0d0a2d59eea5a4a802908',1,'Trie::Trie()']]],
   ['trie_5fmodern_2ecpp_1713',['trie_modern.cpp',['../dc/d93/trie__modern_8cpp.html',1,'']]],

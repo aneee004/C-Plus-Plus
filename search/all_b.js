@@ -14,5 +14,5 @@ var searchData=
   ['kohonen_5fsom_5ftopology_2ecpp_881',['kohonen_som_topology.cpp',['../d4/def/kohonen__som__topology_8cpp.html',1,'']]],
   ['kohonen_5fsom_5ftrace_2ecpp_882',['kohonen_som_trace.cpp',['../d9/d49/kohonen__som__trace_8cpp.html',1,'']]],
   ['kohonen_5fsom_5ftracer_883',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#acc6a28f40512dbda75ab1a3969248898',1,'machine_learning']]],
-  ['kth_5fancestor_884',['kth_ancestor',['../d4/d96/classrange__queries_1_1_tree.html#ad65643a0ca0630f9ee7c74c4fd11058c',1,'range_queries::Tree']]]
+  ['kth_5fancestor_884',['kth_ancestor',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a8f7bca1746d40f21ad832fcea59aa6c6',1,'range_queries::heavy_light_decomposition::Tree']]]
 ];

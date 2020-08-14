@@ -34,8 +34,8 @@ var hierarchy =
     [ "Queue", "dc/db5/struct_queue.html", null ],
     [ "Queue_Array", "d0/dd2/class_queue___array.html", null ],
     [ "SegmentIntersection", "d4/db4/struct_segment_intersection.html", null ],
-    [ "range_queries::SG< X >", "d4/d77/classrange__queries_1_1_s_g.html", [
-      [ "range_queries::HLD< X >", "d4/d32/classrange__queries_1_1_h_l_d.html", null ]
+    [ "range_queries::heavy_light_decomposition::SG< X >", "d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html", [
+      [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
     [ "data_structure::SkipList", "d1/d46/classdata__structure_1_1_skip_list.html", null ],
     [ "Solution", "dd/d4f/class_solution.html", null ],
@@ -44,8 +44,8 @@ var hierarchy =
     [ "statistics::stats_computer1< T >", "d7/d7c/classstatistics_1_1stats__computer1.html", null ],
     [ "statistics::stats_computer2< T >", "d8/dab/classstatistics_1_1stats__computer2.html", null ],
     [ "tower", "d2/d2c/structtower.html", null ],
-    [ "range_queries::Tree< X >", "d4/d96/classrange__queries_1_1_tree.html", [
-      [ "range_queries::HLD< X >", "d4/d32/classrange__queries_1_1_h_l_d.html", null ]
+    [ "range_queries::heavy_light_decomposition::Tree< X >", "d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html", [
+      [ "range_queries::heavy_light_decomposition::HLD< X >", "d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html", null ]
     ] ],
     [ "Trie", "dd/d2f/class_trie.html", null ],
     [ "trie", "d4/dd9/structtrie.html", null ],

@@ -8,5 +8,5 @@ var searchData=
   ['knuth_5fb_3338',['knuth_b',['http://en.cppreference.com/w/cpp/numeric/random/shuffle_order_engine/shuffle_order_engine.html',0,'std::knuth_b']]],
   ['kohonen_5fsom_3339',['kohonen_som',['../d8/d77/namespacemachine__learning.html#adc731720947b4bc2ab047c141e7d0299',1,'machine_learning']]],
   ['kohonen_5fsom_5ftracer_3340',['kohonen_som_tracer',['../d8/d77/namespacemachine__learning.html#acc6a28f40512dbda75ab1a3969248898',1,'machine_learning']]],
-  ['kth_5fancestor_3341',['kth_ancestor',['../d4/d96/classrange__queries_1_1_tree.html#ad65643a0ca0630f9ee7c74c4fd11058c',1,'range_queries::Tree']]]
+  ['kth_5fancestor_3341',['kth_ancestor',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a8f7bca1746d40f21ad832fcea59aa6c6',1,'range_queries::heavy_light_decomposition::Tree']]]
 ];

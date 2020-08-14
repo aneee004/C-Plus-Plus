@@ -1,4 +1,0 @@
-<map id="range_queries::Tree::kth_ancestor" name="range_queries::Tree::kth_ancestor">
-<area shape="rect" id="node1" title="The function returns the kth ancestor of a node." alt="" coords="5,5,143,47"/>
-<area shape="rect" id="node2" href="$d4/d96/classrange__queries_1_1_tree.html#a34e36164b0686022215b23899b47beb0" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="191,5,328,47"/>
-</map>

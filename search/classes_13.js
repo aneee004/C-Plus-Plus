@@ -14,7 +14,7 @@ var searchData=
   ['tm_2466',['tm',['http://en.cppreference.com/w/cpp/chrono/c/tm.html',0,'std']]],
   ['tower_2467',['tower',['../d2/d2c/structtower.html',1,'']]],
   ['treat_5fas_5ffloating_5fpoint_2468',['treat_as_floating_point',['http://en.cppreference.com/w/cpp/chrono/treat_as_floating_point.html',0,'std::chrono']]],
-  ['tree_2469',['Tree',['../d4/d96/classrange__queries_1_1_tree.html',1,'range_queries']]],
+  ['tree_2469',['Tree',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html',1,'range_queries::heavy_light_decomposition']]],
   ['trie_2470',['Trie',['../dd/d2f/class_trie.html',1,'Trie'],['../d4/dd9/structtrie.html',1,'trie']]],
   ['trienode_2471',['TrieNode',['../de/d48/struct_trie_1_1_trie_node.html',1,'Trie']]],
   ['true_5ftype_2472',['true_type',['http://en.cppreference.com/w/cpp/types/integral_constant.html',0,'std']]],

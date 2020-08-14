@@ -1,6 +1,0 @@
-<map id="range_queries::HLD::query" name="range_queries::HLD::query">
-<area shape="rect" id="node1" title="This function returns the sum of node values in the simple path from from node_1 to node_2." alt="" coords="5,35,144,76"/>
-<area shape="rect" id="node2" href="$d4/d32/classrange__queries_1_1_h_l_d.html#a524784ddef09ae6d3ff1d3fc52c95343" title="Utility function to break down a path query into two chain queries." alt="" coords="204,5,343,47"/>
-<area shape="rect" id="node3" href="$d4/d96/classrange__queries_1_1_tree.html#af4403514c896aec8452bc57ac1ca48ca" title="The function returns the least common ancestor of two nodes." alt="" coords="192,71,355,98"/>
-<area shape="rect" id="node4" href="$d4/d96/classrange__queries_1_1_tree.html#a34e36164b0686022215b23899b47beb0" title="The function lifts a node, k units up the tree. The lifting is done in place, and the result is store..." alt="" coords="403,64,540,105"/>
-</map>

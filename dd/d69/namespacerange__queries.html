@@ -90,8 +90,6 @@ $(document).ready(function(){initNavTree('dd/d69/namespacerange__queries.html','
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">range_queries Namespace Reference</div>  </div>
 </div><!--header-->
@@ -99,25 +97,12 @@ $(document).ready(function(){initNavTree('dd/d69/namespacerange__queries.html','
 
 <p>Algorithms and Data Structures that support range queries and updates.  
 <a href="../../dd/d69/namespacerange__queries.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d32/classrange__queries_1_1_h_l_d.html">HLD</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Heavy-Light Decomposition class.  <a href="../../d4/d32/classrange__queries_1_1_h_l_d.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d77/classrange__queries_1_1_s_g.html">SG</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Segment <a class="el" href="../../d4/d96/classrange__queries_1_1_tree.html" title="A Basic Tree, which supports binary lifting.">Tree</a>, to store heavy chains.  <a href="../../d4/d77/classrange__queries_1_1_s_g.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d96/classrange__queries_1_1_tree.html">Tree</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Basic <a class="el" href="../../d4/d96/classrange__queries_1_1_tree.html" title="A Basic Tree, which supports binary lifting.">Tree</a>, which supports binary lifting.  <a href="../../d4/d96/classrange__queries_1_1_tree.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Algorithms and Data Structures that support range queries and updates. </p>
 <p>Function Documentation: Heavy-Light Decomposition is a technique on trees, that supports the following: 1: Update node s, with a value v 2: Return the (sum) of all node values on the simple path from a to b (sum) can also be replced with <a class="el" href="../../d7/d47/namespace_x_o_r.html" title="Functions for XOR cipher algorithm.">XOR</a>, OR, AND, min, or max</p>
-<p>The update is done in O(log n) time, and the query is done in O(log^2 n) time with <a class="el" href="../../d4/d32/classrange__queries_1_1_h_l_d.html" title="The Heavy-Light Decomposition class.">HLD</a> where, n is the number of nodes</p>
+<p>The update is done in O(log n) time, and the query is done in O(log^2 n) time with HLD where, n is the number of nodes</p>
 <p>The template type is the data type of the value stored in the nodes. If a non-primitive data-type is used as a template, the coressponding operators must be overloaded.</p>
-<p>An <a class="el" href="../../d4/d32/classrange__queries_1_1_h_l_d.html" title="The Heavy-Light Decomposition class.">HLD</a> object can only be created with a constant number of nodes, and it cannot be changed later. Creaty an empty instance is not supported.</p>
+<p>An HLD object can only be created with a constant number of nodes, and it cannot be changed later. Creaty an empty instance is not supported.</p>
 <p>To start answering updates and queries,</p><ol type="1">
 <li>Create an instance of HLD&lt;X&gt; object (obj), with the required data type.</li>
 <li>Read in the edge/parent information and update it with obj.add_edge(). Note: The edges addes must be 0 indexed.</li>

@@ -62,7 +62,7 @@ var searchData=
   ['transform_5fprimary_3970',['transform_primary',['http://en.cppreference.com/w/cpp/regex/regex_traits/transform_primary.html',0,'std::regex_traits']]],
   ['translate_3971',['translate',['http://en.cppreference.com/w/cpp/regex/regex_traits/translate.html',0,'std::regex_traits']]],
   ['translate_5fnocase_3972',['translate_nocase',['http://en.cppreference.com/w/cpp/regex/regex_traits/translate_nocase.html',0,'std::regex_traits']]],
-  ['tree_3973',['Tree',['../d4/d96/classrange__queries_1_1_tree.html#ad2cd32ac265f26be2f45344699134fb3',1,'range_queries::Tree']]],
+  ['tree_3973',['Tree',['../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a835fb2bbb27307b8cacad9b287968bc1',1,'range_queries::heavy_light_decomposition::Tree']]],
   ['trianglearea_3974',['TriangleArea',['../d0/d01/smallest__circle_8cpp.html#a94682a4a70d5906857ca09de5b9fb2cc',1,'smallest_circle.cpp']]],
   ['trie_3975',['Trie',['../dd/d2f/class_trie.html#a6af57e9f25d0d0a2d59eea5a4a802908',1,'Trie']]],
   ['truename_3976',['truename',['http://en.cppreference.com/w/cpp/locale/numpunct/truefalsename.html',0,'std::numpunct_byname::truename()'],['http://en.cppreference.com/w/cpp/locale/numpunct/truefalsename.html',0,'std::numpunct::truename()']]],
