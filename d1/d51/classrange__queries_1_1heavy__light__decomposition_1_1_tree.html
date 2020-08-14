@@ -620,7 +620,7 @@ template&lt;typename X &gt; </div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordflow">if</span>(t_depth[b] &gt; t_depth[a]) {</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <a class="code" href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#ac7761255f2ba06b398b9aae5e4dce5f3">lift</a>(&amp;b, t_depth[b] - t_depth[a]);</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span>(a == b) <span class="keywordflow">return</span> a;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">if</span>(a == b) { <span class="keywordflow">return</span> a; }</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = 0; k &lt; t_maxlift; k++) {</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span>(t_par[a][k] != t_par[b][k]) {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                a = t_par[a][k];</div>
