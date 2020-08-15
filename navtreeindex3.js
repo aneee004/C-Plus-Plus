@@ -77,9 +77,9 @@ var NAVTREEINDEX3 =
 "da/d9a/class_graph.html#a6afcd41564ea00294a4c089414979ca1":[7,0,16,39],
 "da/d9a/class_graph.html#a6cb6fbec4ea7cfdfda368f2c468a757d":[7,0,16,19],
 "da/d9a/class_graph.html#a6d95f41d2df61697379ccc209c78f801":[7,0,16,24],
+"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,16,14],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,16,12],
 "da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,16,13],
-"da/d9a/class_graph.html#a6dc4dd4ce49c4052ad2a5d27523881f4":[7,0,16,14],
 "da/d9a/class_graph.html#a73268574e2528b8e760191113ef6d1eb":[7,0,16,26],
 "da/d9a/class_graph.html#a8c95e00effaea0cd9404dd74cd802ae3":[7,0,16,8],
 "da/d9a/class_graph.html#a8dcb5ce0b4a6f65827f5055d9d53a3f1":[7,0,16,20],
@@ -111,7 +111,7 @@ var NAVTREEINDEX3 =
 "da/dd1/structquadratic__probing_1_1_entry.html":[7,0,5,0],
 "da/dd1/structquadratic__probing_1_1_entry.html#a75f72858f08a2fc8b94402de98db12d8":[7,0,5,0,1],
 "da/dd1/structquadratic__probing_1_1_entry.html#a9df1118010a233d13ab3dd699bcb513e":[7,0,5,0,0],
-"da/dd3/namespacespirograph.html":[6,0,12],
+"da/dd3/namespacespirograph.html":[6,0,13],
 "da/de7/decimal__to__hexadecimal_8cpp.html":[8,0,10,2],
 "da/de7/decimal__to__hexadecimal_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe":[8,0,10,2,0],
 "da/df2/durand__kerner__roots_8cpp.html":[8,0,9,2],
@@ -154,6 +154,7 @@ var NAVTREEINDEX3 =
 "db/d66/struct_item.html":[7,0,19],
 "db/d66/struct_item.html#a05e743552459fc8c2abdc80a0f4f0b0a":[7,0,19,1],
 "db/d66/struct_item.html#a62e6c5a24f2618be18e46407857c98de":[7,0,19,0],
+"db/d6f/namespaceheavy__light__decomposition.html":[6,0,6],
 "db/d71/quadratic__probing__hash__table_8cpp.html":[8,0,6,3],
 "db/d71/quadratic__probing__hash__table_8cpp.html#a00ebcc6d39653eccc26f8432efbfc8d9":[8,0,6,3,2],
 "db/d71/quadratic__probing__hash__table_8cpp.html#a07a0467b24102260fbb6b554c453c20a":[8,0,6,3,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#aa799b4cec1681219887d89d037cfab50":[8,0,7,3,14],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ab6171f4db68a5e50ae0f3500a63acd26":[8,0,7,3,7],
 "dc/d38/ordinary__least__squares__regressor_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,7,3,4],
-"dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6":[8,0,7,3,9],
-"dc/d93/trie__modern_8cpp.html":[8,0,2,11]
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6":[8,0,7,3,9]
 };

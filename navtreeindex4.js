@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"dc/d93/trie__modern_8cpp.html":[8,0,2,11],
 "dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,2,11,2],
 "dc/db5/struct_queue.html":[7,0,32],
 "dc/db5/struct_queue.html#a31b892ad81d0e915c20c8f6a88e75f02":[7,0,32,5],
@@ -92,7 +93,7 @@ var NAVTREEINDEX4 =
 "dd/d65/lu__decompose_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[8,0,9,6,0],
 "dd/d65/lu__decompose_8cpp.html#a9459fcd1f020373d73eae2bad43786d0":[8,0,9,6,1],
 "dd/d69/namespacerange__queries.html":[7,0,6],
-"dd/d69/namespacerange__queries.html":[6,0,10],
+"dd/d69/namespacerange__queries.html":[6,0,11],
 "dd/d81/namespacecaesar.html":[6,0,1],
 "dd/d91/class_fenwick_tree.html":[7,0,15],
 "dd/d91/class_fenwick_tree.html#a115ff5c548b429b737ea09f75817d1f9":[7,0,15,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "globals_func_a.html":[8,1,1,1],
 "globals_func_b.html":[8,1,1,2],
 "globals_func_c.html":[8,1,1,3],
-"globals_func_d.html":[8,1,1,4],
-"globals_func_e.html":[8,1,1,5]
+"globals_func_d.html":[8,1,1,4]
 };
