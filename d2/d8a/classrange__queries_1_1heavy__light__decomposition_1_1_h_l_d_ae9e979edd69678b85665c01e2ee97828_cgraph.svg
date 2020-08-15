@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" target="_top" xlink:title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)">
+<g id="a_node3"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" target="_top" xlink:title="stores the label of a node, heavy child of a node, and top of the heavy chain from node">
 <polygon fill="white" stroke="black" points="146,-210.5 146,-251.5 256,-251.5 256,-210.5 146,-210.5"/>
 <text text-anchor="start" x="154" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="154" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>

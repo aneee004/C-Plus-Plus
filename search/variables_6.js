@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['harr_4239',['harr',['../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e',1,'MinHeap']]],
-  ['hashtab_4240',['hashtab',['../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d',1,'hash_search.cpp']]],
-  ['head_4241',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain']]],
-  ['header_4242',['header',['../d1/d46/classdata__structure_1_1_skip_list.html#a7aed753e3b47953229f5ac94f0fc9aad',1,'data_structure::SkipList']]],
-  ['heap_5fsize_4243',['heap_size',['../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913',1,'MinHeap']]]
+  ['h_5flabel_4247',['h_label',['../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#aa86a91ae0cd7898990a8170a2f2c9cda',1,'range_queries::heavy_light_decomposition::HLD']]],
+  ['harr_4248',['harr',['../d2/d05/class_min_heap.html#a34a93a87967308eb516328c0aca3c48e',1,'MinHeap']]],
+  ['hashtab_4249',['hashtab',['../d1/df3/hash__search_8cpp.html#af413b1740073db54796642b0ab814d6d',1,'hash_search.cpp']]],
+  ['head_4250',['head',['../dd/d1c/classhash__chain.html#ae8457d13620497fa2046ac566252c4b0',1,'hash_chain']]],
+  ['header_4251',['header',['../d1/d46/classdata__structure_1_1_skip_list.html#a7aed753e3b47953229f5ac94f0fc9aad',1,'data_structure::SkipList']]],
+  ['heap_5fsize_4252',['heap_size',['../d2/d05/class_min_heap.html#ae4d358bf063bb196a1945b3fb99b4913',1,'MinHeap']]]
 ];

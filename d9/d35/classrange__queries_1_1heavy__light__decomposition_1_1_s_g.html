@@ -140,17 +140,29 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Everything here is private, and can only be accessed through the methods, in the derived class (<a class="el" href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html" title="The Heavy-Light Decomposition class.">HLD</a>) <br /></td></tr>
 <tr class="separator:afbf8a9cb9449d5ca844f4e141a801e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6d912bbfafa3a7509f66bbc1729ca25"><td class="memItemLeft" align="right" valign="top"><a id="ac6d912bbfafa3a7509f66bbc1729ca25"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>s_size</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a></td></tr>
+<tr class="memdesc:ac6d912bbfafa3a7509f66bbc1729ca25"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>the segment tree, stored as a vector </p>
+</blockquote>
+<br /></td></tr>
 <tr class="separator:ac6d912bbfafa3a7509f66bbc1729ca25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7f93971a9f891e0bbb7023081f379d5"><td class="memItemLeft" align="right" valign="top"><a id="aa7f93971a9f891e0bbb7023081f379d5"></a>
-X&#160;</td><td class="memItemRight" valign="bottom"><b>sret_init</b> = 0</td></tr>
+X&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5">sret_init</a> = 0</td></tr>
+<tr class="memdesc:aa7f93971a9f891e0bbb7023081f379d5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>number of leaves in the segment tree </p>
+</blockquote>
+<br /></td></tr>
 <tr class="separator:aa7f93971a9f891e0bbb7023081f379d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:afcdadbdea1e2391cebbb17d2c1ae2f0b"><td class="memTemplParams" colspan="2"><a id="afcdadbdea1e2391cebbb17d2c1ae2f0b"></a>
 template&lt;typename T &gt; </td></tr>
-<tr class="memitem:afcdadbdea1e2391cebbb17d2c1ae2f0b"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HLD</b></td></tr>
+<tr class="memitem:afcdadbdea1e2391cebbb17d2c1ae2f0b"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afcdadbdea1e2391cebbb17d2c1ae2f0b">HLD</a></td></tr>
+<tr class="memdesc:afcdadbdea1e2391cebbb17d2c1ae2f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><blockquote class="doxtable">
+<p>inital query return value </p>
+</blockquote>
+<br /></td></tr>
 <tr class="separator:afcdadbdea1e2391cebbb17d2c1ae2f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -199,10 +211,10 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                          {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        s_size = size;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(2*s_size, 0ll);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                          {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a> = size;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>.<a class="codeRef" target="_blank" href="http://en.cppreference.com/w/cpp/container/vector/assign.html">assign</a>(2*<a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a>, 0ll);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -252,9 +264,9 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the combined result </dd></dl>
-<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                            {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">return</span> lhs + rhs;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                            {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">return</span> lhs + rhs;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -303,14 +315,14 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                          {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        X lhs = sret_init, rhs = sret_init;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">for</span>(l += s_size, r += s_size + 1; l &lt; r; l &gt;&gt;= 1, r &gt;&gt;= 1) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">if</span>(l &amp; 1) lhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(lhs, <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[l++]);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordflow">if</span>(r &amp; 1) rhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(<a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[--r], rhs);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(lhs, rhs);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                          {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        X lhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5">sret_init</a>, rhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5">sret_init</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keywordflow">for</span>(l += <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a>, r += <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a> + 1; l &lt; r; l &gt;&gt;= 1, r &gt;&gt;= 1) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="keywordflow">if</span>(l &amp; 1) lhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(lhs, <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[l++]);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="keywordflow">if</span>(r &amp; 1) rhs = <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(<a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[--r], rhs);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">combine</a>(lhs, rhs);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -353,9 +365,9 @@ template&lt;typename X &gt; </div>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                                        {</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        sret_init = new_sret_init;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                        {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5">sret_init</a> = new_sret_init;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -404,9 +416,9 @@ template&lt;typename X &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                            {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">for</span>(p += s_size; p &gt; 0; p &gt;&gt;= 1) { <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[p] += v; }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                            {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keywordflow">for</span>(p += <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">s_size</a>; p &gt; 0; p &gt;&gt;= 1) { <a class="code" href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">s_tree</a>[p] += v; }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -415,8 +427,10 @@ template&lt;typename X &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_a41c733f5f5e262b308f7cb95c88c1e74"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">range_queries::heavy_light_decomposition::SG::combine</a></div><div class="ttdeci">X combine(X lhs, X rhs)</div><div class="ttdoc">Function that specifies the type of operation involved when segments are combined.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:258</div></div>
-<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_afbf8a9cb9449d5ca844f4e141a801e6a"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">range_queries::heavy_light_decomposition::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be accessed through the methods, in the derived class (HLD)</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:247</div></div>
+<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_aa7f93971a9f891e0bbb7023081f379d5"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#aa7f93971a9f891e0bbb7023081f379d5">range_queries::heavy_light_decomposition::SG::sret_init</a></div><div class="ttdeci">X sret_init</div><div class="ttdoc">number of leaves in the segment tree</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:248</div></div>
+<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_a41c733f5f5e262b308f7cb95c88c1e74"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#a41c733f5f5e262b308f7cb95c88c1e74">range_queries::heavy_light_decomposition::SG::combine</a></div><div class="ttdeci">X combine(X lhs, X rhs)</div><div class="ttdoc">Function that specifies the type of operation involved when segments are combined.</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:257</div></div>
+<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_afbf8a9cb9449d5ca844f4e141a801e6a"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#afbf8a9cb9449d5ca844f4e141a801e6a">range_queries::heavy_light_decomposition::SG::s_tree</a></div><div class="ttdeci">std::vector&lt; X &gt; s_tree</div><div class="ttdoc">Everything here is private, and can only be accessed through the methods, in the derived class (HLD)</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:246</div></div>
+<div class="ttc" id="aclassrange__queries_1_1heavy__light__decomposition_1_1_s_g_html_ac6d912bbfafa3a7509f66bbc1729ca25"><div class="ttname"><a href="../../d9/d35/classrange__queries_1_1heavy__light__decomposition_1_1_s_g.html#ac6d912bbfafa3a7509f66bbc1729ca25">range_queries::heavy_light_decomposition::SG::s_size</a></div><div class="ttdeci">int s_size</div><div class="ttdoc">the segment tree, stored as a vector</div><div class="ttdef"><b>Definition:</b> heavy_light_decomposition.cpp:247</div></div>
 <div class="ttc" id="aassign_html"><div class="ttname"><a href="http://en.cppreference.com/w/cpp/container/vector/assign.html">std::vector::assign</a></div><div class="ttdeci">T assign(T... args)</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
