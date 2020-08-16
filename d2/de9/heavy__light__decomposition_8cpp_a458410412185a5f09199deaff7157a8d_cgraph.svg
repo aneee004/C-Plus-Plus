@@ -199,7 +199,7 @@ var sectionId = 'dynsection-3';
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" target="_top" xlink:title="stores the label of a node, heavy child of a node, and top of the heavy chain from node">
+<g id="a_node7"><a xlink:href="../../d2/d8a/classrange__queries_1_1heavy__light__decomposition_1_1_h_l_d.html#af64848d6630c39d0f09ce2359cc7c4f8" target="_top" xlink:title="Utility function to assign heavy child to each node (&#45;1 for a leaf node)">
 <polygon fill="white" stroke="black" points="229,-398.5 229,-439.5 339,-439.5 339,-398.5 229,-398.5"/>
 <text text-anchor="start" x="237" y="-427.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="237" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
