@@ -163,7 +163,7 @@ var sectionId = 'dynsection-1';
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a12f610db0786971cb7ac7edad6cfd6d1" target="_top" xlink:title="Set the values for all the nodes.">
+<g id="a_node18"><a xlink:href="../../d1/d51/classrange__queries_1_1heavy__light__decomposition_1_1_tree.html#a04cd96efaba147b19d3afc769b90ff70" target="_top" xlink:title="Set the values for all the nodes.">
 <polygon fill="white" stroke="black" points="154,-128.5 154,-169.5 264,-169.5 264,-128.5 154,-128.5"/>
 <text text-anchor="start" x="162" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">range_queries::heavy</text>
 <text text-anchor="start" x="162" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">_light_decomposition</text>
