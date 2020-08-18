@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"dc/d38/ordinary__least__squares__regressor_8cpp.html#aecef32c2a4f39a3f7398949256d180a6":[8,0,7,3,9],
 "dc/d93/trie__modern_8cpp.html":[8,0,2,11],
 "dc/d93/trie__modern_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[8,0,2,11,2],
 "dc/db5/struct_queue.html":[7,0,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "functions_o.html":[7,3,0,13],
 "functions_p.html":[7,3,0,14],
 "functions_q.html":[7,3,0,15],
-"functions_r.html":[7,3,0,16],
-"functions_rela.html":[7,3,4]
+"functions_r.html":[7,3,0,16]
 };
